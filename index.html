@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>星星的煌网页导航</title>
+		<style>
+			body {
+				text-align: center
+			}
+
+			img {
+				-webkit -border -radius: 10px;
+				-moz -border -radius: 10px;
+				border-radius: 10px;
+			}
+
+
+			a {
+				text-decoration: none;
+				font-family: "微软雅黑";
+				border: none;
+				color: #738dae;
+				padding: 15px 15px;
+				margin: 10px 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 25px;
+			}
+
+			.div {
+				margin: 0 auto;
+				width: 1300px;
+				height: 0px;
+			}
+
+			.div1 {
+				margin: 0 auto;
+				padding-top: 50px;
+				font-size: 80px;
+				width: 1300px;
+				height: 90px;
+				border: 1px;
+				font-family: "微软黑体";
+			}
+
+			.div2 {
+				margin: 0 auto;
+				width: 1300px;
+				height: 0px;
+			}
+
+			.div3 {
+				margin: 0 auto;
+				padding-top: 30px;
+				font-size: 30px;
+				line-height: 30px;
+				width: 1300px;
+				height: 700px;
+				border: 1px;
+			}
+
+			.div4 {
+				margin: 0 auto;
+				width: 1300px;
+				height: 50px;
+			}
+
+			.div5 {
+				margin: 0 auto;
+				width: 1300px;
+				height: 20px;
+				background: #d4edf3;
+			}
+
+			.div6 {
+				margin: 0 auto;
+				width: 1300px;
+				height: 5px;
+			}
+
+			.div7 {
+				margin: 0 auto;
+				width: 1300px;
+				height: 5px;
+				background: #d4edf3;
+			}
+
+			< !#2e4259>nav {
+				margin: 0px;
+			}
+
+			nav ul {
+				list-style-type: none;
+				height: 32px;
+				display: flex;
+				position: relative;
+			}
+
+			nav ul li {
+
+				margin-right: 0px;
+			}
+
+			nav ul li strong {
+
+				text-transform: uppercase;
+				background-color: #d4edf3;
+				color: white;
+				padding: 5px 30px;
+				line-height: 30px;
+				cursor: pointer;
+			}
+
+			nav ul li strong+div {
+				display: flex;
+				flex-direction: column;
+				background-color: #d4edf3;
+				padding: 0px;
+				transform: translateY(20%);
+				
+				opacity: 0;
+				transition: .3s;
+				transform-origin: top;
+				position: absolute;
+				bottom: 40px;
+			}
+
+			nav ul li:hover div {
+				transform: translateY(0);
+				opacity: 1;
+			}
+
+			nav ul li strong+div a {
+				color: white;
+				text-decoration: none;
+				text-transform: uppercase;
+				padding: 0px 0;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="div">
+		</div>
+
+		<div class="div1">
+			<form action="http://www.baidu.com/baidu" target="_blank">
+				<input type=text style="width:600px; height:40px;font-size:22px;" name=word size=30
+					placeholder="请输入您要搜索的关键字">
+				<input type="submit" style="width:100px; height:40px;font-size:18px;" value="点击搜索">
+
+		</div>
+
+
+		<div class="div2">
+
+		</div>
+
+		<div class="div3">
+			<a target="_blank">
+
+				<img src="img/xinlang.png" border="0" width="100" height="100" width="100" alt="planets"
+					usemap="#plantmap" />
+				<map name="plantmap">
+					<area shape="rect" coords="0,0,50,100" alt="Sun" href="http://www.sina.com.cn" target="_blank" />
+					<area shape="circle" coords="50,50,100,100" alt="Mercury" href="https://weibo.com/"
+						target="_parent" />
+				</map><br />新浪</a>
+
+			<a target="_blank">
+				<img src="img/baidu.png" border="0" width="100" height="100" width="100" alt="planets"
+					usemap="#plantmap1" />
+				<map name="plantmap1">
+					<area shape="poly" coords="0,0,100,0,100,80,80,80,80,100,0,100" alt="Sun"
+						href="http://www.baidu.com" target="_blank" />
+					<area shape="rect" coords="80,80,100,100" alt="Mercury"
+						href="https://fanyi.baidu.com/?aldtype=16047#auto/zh" target="_parent" />
+				</map><br />百度</a>
+
+			<a target="_blank">
+				<img src="img/tengxun.png" border="0" width="100" height="100" width="100" alt="planets"
+					usemap="#plantmap2" />
+				<map name="plantmap2">
+					<area shape="circle" coords="50,50,50" alt="Sun" href="https://www.qq.com/" target="_blank" />
+					<area shape="rect" coords="80,80,100,100" alt="Mercury" href="https://mail.qq.com/"
+						target="_parent" />
+					<br />腾讯</a>
+
+
+
+			<a target="_blank" href="https://www.taobao.com/"><img border="0" src="img/taobao.png" height="100"
+					width="100" /><br />淘宝</a>
+			<a target="_blank" href="https://www.jd.com/"> <img border="0" src="img/jd.png" height="100"
+					width="100" /><br />京东</a>
+			<a target="_blank" href="https://www.mi.com/index.html"> <img border="0" src="img/mi.png" height="100"
+					width="100" /><br />小米</a>
+			<a target="_blank" href="https://www.zhihu.com/"> <img border="0" src="img/zhihu.png" height="100"
+					width="100" /><br />知乎</a>
+			<a target="_blank" href="https://www.google.com/"> <img border="0" src="img/google.png" height="100"
+					width="100" /><br />谷歌</a>
+			<br />
+			<a target="_blank" href="https://mijisou.com/"><img border="0" src="img/youtube.png" height="100"
+					width="100" /><br />油管</a>
+			<a target="_blank" href="https://www.bilibili.com/"><img border="0" src="img/b.png" height="100"
+					width="100" /><br />B站</a>
+			<a target="_blank" href="https://www.pconline.com.cn/"> <img border="0" src="img/tpy.png" height="100"
+					width="100" /><br />太平洋</a>
+			<a target="_blank" href="http://www.zol.com.cn/"><img border="0" src="img/zgc.png" height="100"
+					width="100" /><br /> 中关村</a>
+			<a target="_blank" href="http://www.fengniao.com/"><img border="0" src="img/fnw.png" height="100"
+					width="100" /><br /> 蜂鸟网</a>
+			<a target="_blank" href="http://www.upantool.com/"><img border="0" src="img/u.png" height="100"
+					width="100" /><br /> U盘量产</a>
+			<a target="_blank" href="http://bbs.gfan.com/"><img border="0" src="img/jf.png" height="100"
+					width="100" /><br /> 机锋论坛</a>
+			<a target="_blank" href="http://www.iqiyi.com/"><img border="0" src="img/qiy.png" height="100"
+					width="100" /><br /> 爱奇艺</a>
+			<br />
+			<a target="_blank" href="https://www.google.com/"> <img border="0" src="img/cctv.png" height="100"
+					width="100" /><br />cctv</a>
+			<a target="_blank" href="http://www.duowan.com/"><img border="0" src="img/douwan.png" height="100"
+					width="100" /><br /> 多玩游戏</a>
+			<a target="_blank" href="http://www.ali213.net/"><img border="0" src="img/yxw.png" height="100"
+					width="100" /><br /> 游侠网</a>
+			<a target="_blank" href="https://www.hao123.com/"><img border="0" src="img/hao123.png" height="100"
+					width="100" /><br /> hao123</a>
+			<a target="_blank" href="https://211.156.195.23/cas/login?service=https://211.156.195.23/portal/a/cas"> <img
+					border="0" src="img/mail.png" height="100" width="100" /><br />腾讯邮箱</a>
+			<a target="_blank" href="https://k6.d98y8zvl.org/pw/"> <img border="0" src="img/1024.png" height="100"
+					width="100" /><br />1024</a>
+			<a target="_blank" href="http://daohangwan.com/"><img border="0" src="img/daohangwan.png" height="100"
+					width="100" /><br /> 导航湾</a>
+			<a target="_blank" href="https://tuchong.com/community"> <img border="0" src="img/tuchong.png" height="100"
+					width="100" /><br />图虫</a>
+			<br />
+			<a target="_blank" href="http://www.lookae.com/"><img border="0" src="img/yxw.png" height="100"
+					width="100" /><br />Lookae</a>
+			<a target="_blank" href="http://www.qinms.com/webapp/qrcode/index.aspx"><img border="0" src="img/cm.png"
+					height="100" width="100" /><br />二维码</a>
+			<a target="_blank" href="http://sendmyurl.com/bbs"><img border="0" src="img/sex.png" height="100"
+					width="100" /><br />色中色</a>
+			<a target="_blank" href="https://www.icourse163.org/"><img border="0" src="img/mooc.png" height="100"
+					width="100" /><br />MOOC</a>
+			<a target="_blank">
+
+				<img src="img/qunhui.jfif" border="0" width="100" height="100" width="100" alt="planets"
+					usemap="#plantmap29" />
+				<map name="plantmap29">
+					<area shape="circle" coords="50,40,40" alt="Sun" href="http://192.168.100.111:5000/"
+						target="_blank" />
+					<area shape="rect" coords="70,70,100,100" alt="Mercury"
+						href="http://yc.ionewu.com/?host=http%3A%2F%2F192.168.100.111%3A8283" <area shape="rect"
+						coords="0,70,30,100" alt="Mercury"
+						href="http://192.168.100.111:5000/?launchApp=SYNO.SDS.VideoStation.AppInstance&SynoToken=uvDPZOYpOY5jM"
+						target="_parent" />
+				</map><br />群晖</a>
+
+
+
+
+			<a target="_blank" href="http://www.newsmth.net/"><img border="0" src="img/smsq.png" height="100"
+					width="100" /><br />水木论坛</a>
+			<a target="_blank" href="https://www.qidian.com/"><img border="0" src="img/qidian.png" height="100"
+					width="100" /><br />起点</a>
+
+			<a target="_blank">
+
+				<img src="img/jb.png" border="0" width="100" height="100" width="100" alt="planets"
+					usemap="#plantmap32" />
+				<map name="plantmap32">
+					<area shape="circle" coords="50,50,30" alt="Sun" href="navigation.html" target="_blank" />
+
+
+
+
+
+					<area shape="rect" coords="70,70,100,100" alt="Sun" href=#
+						onClick="javascript:window.open('Plug/jishuanqi/计算器.html','','width=450,height=550,top=300,left=700,toolbar=no, status=no, menubar=no, resizable=yes, scrollbars=yes');return false;"
+						target="_parent" />
+
+
+				</map>
+
+
+
+
+				<br />更多</a>
+
+
+
+		</div>
+
+
+		<div class="div4">
+		</div>
+
+
+		<div class="div5" </div>
+
+			<div class="div6 " onclick="window.open('navigation1ewm.html','_self')">
+			</div>
+
+			<div class="div7">
+
+
+
+			</div>
+
+			<nav>
+				<ul>
+					<li>
+						<strong>拼单购物</strong>
+						<div>
+							<a target="_blank" href="https://www.taobao.com/">淘宝购物</a>
+							<a href="http://app.yangkeduo.com/">拼多多</a>
+						</div>
+					</li>
+					<li>
+						<strong>视频工具</strong>
+						<div>
+							<a href="https://haokan.baidu.com/">百度视频</a>
+							<a href="https://v.qq.com/">腾讯视频</a>
+						</div>
+					</li>
+					<li>
+						<strong>精品工具</strong>
+						<div>
+							<a href="http://qinkan.cc/bbs/index.php">sex</a>
+							<a href="http://q11.colin1994.net/pw/">1024</a>
+							<a href="https://3q.wupeishan.com/2048/">2048</a>
+						</div>
+					</li>
+					<li>
+						<strong>游戏网站</strong>
+						<div>
+							<a href="https://www.rockstargames.com/">R星</a>
+							<a href="">crm</a>
+						</div>
+					</li>
+					<li>
+						<strong>搜索工具</strong>
+						<div>
+							<a href="">cms</a>
+							<a href="https://duo66.cc/">搜多多</a>
+						</div>
+					</li>
+
+					<li>
+						<strong>工具工具</strong>
+						<div>
+							<a href="">cms</a>
+							<a href="">crm</a>
+						</div>
+					</li>
+
+					<li>
+						<strong>工具工具</strong>
+						<div>
+							<a href="">cms</a>
+							<a href="">crm</a>
+						</div>
+					</li>
+					<li>
+						<strong>工具工具</strong>
+						<div>
+							<a href="">cms</a>
+							<a href="">crm</a>
+						</div>
+					</li>
+					<li>
+						<strong>工具工具</strong>
+						<div>
+							<a href="">cms</a>
+							<a href="">crm</a>
+						</div>
+					</li>
+					<li>
+						<strong>工具工具</strong>
+						<div>
+							<a href="">cms</a>
+							<a href="">crm</a>
+						</div>
+					</li>
+
+
+				</ul>
+			</nav>
+
+
+
+	</body>
+</html>
+
+
